@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css">
+		<style>
+			.box{
+				width: 220px;
+				height: 220px;
+				border-radius: 50%;
+				position: relative;
+				margin-left: 220px;
+			}
+			.box:hover .img{
+				transform: rotate(-140deg);
+			}
+			.box:hover .bian{
+				transform: rotate(-140deg);
+			}
+			.img{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				position: absolute;
+				left:0px;
+				top:0px;
+				z-index:3;
+				transition: .35s linear;
+				transform-origin: 212px 100px;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				background-size: cover;
+				position: absolute;
+				left:0;
+				top:0;
+			}
+			p{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				position: absolute;
+				left:0px;
+				top:0px;
+				z-index:2;
+				text-align: center;
+				line-height: 220px;
+				background-color: black;
+				color:#fff;
+			}
+			.bian{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				border: 16px solid rgba(255, 255, 255, .6);
+				position: absolute;
+				left:0;
+				top:0;
+				z-index:3;
+				box-sizing: border-box;
+				transition: .35s linear;
+				transform-origin: 212px 100px;
+			}
+			span{
+				display:block;
+				width: 8px;
+				height: 8px;
+				background-color: black;
+				position: absolute;
+				left: 208px;
+				border-radius:50%;
+				top: 100px;
+				z-index:5;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="img"><img src="img/img1.jpg" alt=""></div>
+			<p>SWYZ_YZ</p>
+			<div class="bian"></div>
+			<span></span>
+		</div>
+	</body>
+</html>
